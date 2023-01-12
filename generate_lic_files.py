@@ -81,7 +81,7 @@ i = 0
 for i in range(0, len(rows)):
     file_name = rows[i:i + 1][0]
     a_path = '/app/projects/asic_sandbox/zwang/sandbox/lic_list/license_list/'
-    a_file = file_name.to_string()
+    a_file = file_name.to_string(index=False)
     file_tile = '/app/projects/asic_sandbox/zwang/sandbox/lic_list/license_list/' + a_file + '.csv'.format(i)
     # file_path = '/app/projects/asic_sandbox/zwang/sandbox/lic_list/ok/{}.csv'.format(i)
     df = pd.read_csv(file_tile, header=None)
