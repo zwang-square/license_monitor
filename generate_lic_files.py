@@ -26,7 +26,7 @@ def delblankline(infile, outfile):
 
 # format the file
 def format_file():
-    with open('D;\lic', "r") as f:
+    with open('D:\lic', "r") as f:
         ll = f.readlines()
     with open('D:\lic', "w") as f:
         for line in ll:
